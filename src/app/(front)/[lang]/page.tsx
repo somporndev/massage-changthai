@@ -6,29 +6,6 @@ export default function Home() {
       <h1 className="title">
         massage Chang thai
       </h1>
-      <p></p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
-      <p>s</p>
     </main>
   )
 }
