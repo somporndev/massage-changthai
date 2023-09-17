@@ -1,11 +1,11 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
-import lineSVG from '../../../public/svg/line-50.svg'
-import wechatSVG from '../../../public/svg/wechat-50.svg'
-import whatsapSVG from '../../../public/svg/whatsap-50.svg'
-import facebookSVG from '../../../public/svg/facebook-50.svg'
-import instagramSVG from '../../../public/svg/instagram-50.svg'
+import lineSVG from '@/public/svg/line-50.svg'
+import wechatSVG from '@/public/svg/wechat-50.svg'
+import whatsapSVG from '@/public/svg/whatsap-50.svg'
+import facebookSVG from '@/public/svg/facebook-50.svg'
+import instagramSVG from '@/public/svg/instagram-50.svg'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {

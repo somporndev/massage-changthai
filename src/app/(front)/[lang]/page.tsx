@@ -1,9 +1,12 @@
 
+
 export default function Home() {
   return (
-    <main className="">
-      bodys
-      <p>s</p>
+    <main className="data">
+      <h1 className="title">
+        massage Chang thai
+      </h1>
+      <p></p>
       <p>s</p>
       <p>s</p>
       <p>s</p>
