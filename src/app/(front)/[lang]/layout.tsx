@@ -1,9 +1,10 @@
 import Image from 'next/image'
-import lineSVG from '@/public/svg/line-50.svg'
-import wechatSVG from '@/public/svg/wechat-50.svg'
-import whatsapSVG from '@/public/svg/whatsap-50.svg'
-import facebookSVG from '@/public/svg/facebook-50.svg'
-import instagramSVG from '@/public/svg/instagram-50.svg'
+import lineSVG from '../../../../public/svg/line-50.svg'
+import wechatSVG from '../../../../public/svg/wechat-50.svg'
+import whatsapSVG from '../../../../public/svg/whatsap-50.svg'
+import facebookSVG from '../../../../public/svg/facebook-50.svg'
+import instagramSVG from '../../../../public/svg/instagram-50.svg'
+import logo from '@/public/img/change-thai-logo.png'
 import { Inter } from 'next/font/google'
 import "@/app/globals.css";
 const inter = Inter({ subsets: ["latin"] });
@@ -25,29 +26,76 @@ export default function RootLayout({
           <nav className="bg-white dark:bg-gray-900 w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
               <a href="#" className="flex items-center">
-                <Image src="/img/change-thai-logo.png" alt="logo-change-thai-massage" width={80} height={80} />
-                <span className="xs:hide self-center text-2xl font-semibold whitespace-nowrap dark:text-white">chang thai | massage</span>
+                <Image
+                  src="/img/change-thai-logo.png"
+                  alt="logo-change-thai-massage"
+                  width={80}
+                  height={80}
+                />
+                <span className="xs:hide self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                  chang thai | massage
+                </span>
               </a>
               <div className="flex md:order-2">
-                <button type="button" className="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900">RESERVATION</button>
-                <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                <button
+                  type="button"
+                  className="text-yellow-400 hover:text-white border border-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-yellow-300 dark:text-yellow-300 dark:hover:text-white dark:hover:bg-yellow-400 dark:focus:ring-yellow-900"
+                >
+                  RESERVATION
+                </button>
+                <button
+                  data-collapse-toggle="navbar-sticky"
+                  type="button"
+                  className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                  aria-controls="navbar-sticky"
+                  aria-expanded="false"
+                >
                   <span className="sr-only">Open main menu</span>
-                  <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                  <svg
+                    className="w-5 h-5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 17 14"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M1 1h15M1 7h15M1 13h15"
+                    />
                   </svg>
                 </button>
               </div>
-              <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+              <div
+                className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                id="navbar-sticky"
+              >
                 <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                   <li>
-                    <a href="#" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">TREATMENT</a>
-                  </li>
-                  <li>
-                    <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">OUR THERAPISTS
+                    <a
+                      href="#"
+                      className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                      aria-current="page"
+                    >
+                      TREATMENT
                     </a>
                   </li>
                   <li>
-                    <a href="#contactUs" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">CONTACT US
+                    <a
+                      href="#"
+                      className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >
+                      OUR THERAPISTS
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#contactUs"
+                      className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                    >
+                      CONTACT US
                     </a>
                   </li>
                 </ul>
@@ -58,37 +106,70 @@ export default function RootLayout({
         <hr />
         {children}
         <hr />
-        <footer className='p-10 color-white bg-red-800 text-white' id="contactUs">
-          <div className='grid row-auto gap-4d justify-center gap-5'>
+        <footer
+          className="p-10 color-white bg-red-800 text-white"
+          id="contactUs"
+        >
+          <div className="grid row-auto gap-4d justify-center gap-5">
             <div className="flex gap-3 items-stretch">
-              <Image src="/img/change-thai-logo.png" alt="logo-change-thai-massage" width={100} height={100} />
-              <h5 className='font-semibold uppercase flex items-center' >chang thai | massage</h5>
+              <Image
+                src={logo}
+                alt="logo-change-thai-massage"
+                width={100}
+                height={100}
+              />
+              <h5 className="font-semibold uppercase flex items-center">
+                chang thai | massage
+              </h5>
             </div>
             <div>
-              <h6 className='font-medium'>
-                Contact Us
-              </h6>
+              <h6 className="font-medium">Contact Us</h6>
             </div>
-            <div className='flex gap-3'>
+            <div className="flex gap-3">
               <a href="http://">
-                <Image src={lineSVG} alt="line-change-thai-massage" width={50} height={50} />
+                <Image
+                  src={lineSVG}
+                  alt="line-change-thai-massage"
+                  width={50}
+                  height={50}
+                />
               </a>
               <a href="http://">
-                <Image src={wechatSVG} alt="wechat-change-thai-massage" width={50} height={50} />
+                <Image
+                  src={wechatSVG}
+                  alt="wechat-change-thai-massage"
+                  width={50}
+                  height={50}
+                />
               </a>
               <a href="http://">
-                <Image src={whatsapSVG} alt="whatsap-change-thai-massage" width={50} height={50} />
+                <Image
+                  src={whatsapSVG}
+                  alt="whatsap-change-thai-massage"
+                  width={50}
+                  height={50}
+                />
               </a>
               <a href="http://">
-                <Image src={facebookSVG} alt="facebook-change-thai-massage" width={50} height={50} />
+                <Image
+                  src={facebookSVG}
+                  alt="facebook-change-thai-massage"
+                  width={50}
+                  height={50}
+                />
               </a>
               <a href="http://">
-                <Image src={instagramSVG} alt="instagram-change-thai-massage" width={50} height={50} />
+                <Image
+                  src={instagramSVG}
+                  alt="instagram-change-thai-massage"
+                  width={50}
+                  height={50}
+                />
               </a>
             </div>
           </div>
         </footer>
       </body>
     </html>
-  )
+  );
 }
